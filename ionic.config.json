@@ -1,0 +1,8 @@
+{
+  "name": "el-dorado-test-app",
+  "app_id": "c9b1ef13",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
