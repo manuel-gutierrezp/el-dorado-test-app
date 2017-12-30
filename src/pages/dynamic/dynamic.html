@@ -1,0 +1,77 @@
+<!--
+  Generated template for the DynamicPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+  	<button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Dynamic</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<div padding>
+  <ion-segment [(ngModel)]="geo">
+    <ion-segment-button value="outside">
+      Outside Airport
+    </ion-segment-button>
+    <ion-segment-button value="inside">
+      Inside Airport
+    </ion-segment-button>
+    <ion-segment-button value="offline">
+      Offline
+    </ion-segment-button>
+  </ion-segment>
+</div>
+
+<div [ngSwitch]="geo">
+
+  <ion-list *ngSwitchCase="'inside'">
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="http://www.cafeoma.com/_/editor/images/logo_header.png">
+      </ion-thumbnail>
+      <h2>Oma</h2>
+    </ion-item>
+    ...
+  </ion-list>
+
+
+  <ion-list *ngSwitchCase="'outside'">
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="https://static01.ofertia.com.co/comercios/juan-valdez/profile-79154.v7.png">
+      </ion-thumbnail>
+      <h2>Juan Valdez</h2>
+    </ion-item>
+    ...
+  </ion-list>
+
+  <ion-list *ngSwitchCase="'offline'">
+    <ion-item>
+      <ion-thumbnail item-start>
+        <!-- Please add this image as a local asset -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Adidas_Logo.svg/1200px-Adidas_Logo.svg.png">
+      </ion-thumbnail>
+      <h2>Addidas</h2>
+    </ion-item>
+    ...
+  </ion-list>
+
+</div>
+
+
+</ion-content>
+
+<ion-footer>
+  <hr>
+  <p> GPS Coordinates: Lat: XXXXX , Long: XXXXX , Altitude: XXXXX</p>
+  <p> Internet Connection Status: <span class="status"> Offline | Online</span> </p>
+</ion-footer>
