@@ -6,6 +6,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { DynamicPage } from '../pages/dynamic/dynamic';
 import { MapPage } from '../pages/map/map';
+import { BeaconsPage } from '../pages/beacons/beacons';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -15,7 +16,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     HomePage,
     DynamicPage, 
-    MapPage
+    MapPage,
+    BeaconsPage
   ],
   imports: [
     BrowserModule,
@@ -26,7 +28,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     HomePage,
     DynamicPage, 
-    MapPage
+    MapPage,
+    BeaconsPage,
   ],
   providers: [
     StatusBar,
