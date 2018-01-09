@@ -26,7 +26,6 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: HomePage },
       { title: 'Map', component: MapPage },
-      {title: 'Beacons', component: BeaconsPage },
       { title: 'Dynamic', component: DynamicPage }
     ];
 
