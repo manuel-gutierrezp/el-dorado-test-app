@@ -6,7 +6,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/home/home';
 import { DynamicPage } from '../pages/dynamic/dynamic';
 import { MapPage } from '../pages/map/map';
-import { BeaconsPage } from '../pages/beacons/beacons';
+
 
 
 @Component({
